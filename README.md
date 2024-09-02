@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# Tic-tac-toe app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple implementation of the game tic-tac-toe
 
-Currently, two official plugins are available:
+## Code structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple architecture was chosen with division into components, each of which is responsible for its own small part and is located in a separate folder along with a file for styles, inside components, everything is collected together in the App component, the utils folder is responsible for additional functionality not related to design
 
-## Expanding the ESLint configuration
+## Libraries & tools
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React (As stated in the task) 
+- Typescript (In my opinion, is a must to avoid many mistakes and misunderstandings during development, convenience during writing in the form of code hints)
+- Scss (Balance in customization and ease of development, for such a small project it is ideal, for larger projects I would probably choose libraries like ChakraUI/Antd/material)
+- Vite (A fast and modern way to create and build a project, perfect for creating a regular one-page application)
+- Eslint (Automatically fix linter errors as you write code)
+- Prettier (Showing errors in code style so that the entire project can adhere to the same concepts)
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Design decisions
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Added function calculateWinner to get winner id, there are many ways to store and process selected fields, one of them was chosen as the most convenient for quickly writing a small project
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+git clone https://github.com/GlobusOffZeWorld/tic-tac-toe.git
+cd tic-tac-toe
+npm install
 ```
