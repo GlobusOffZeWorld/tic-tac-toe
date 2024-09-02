@@ -1,0 +1,44 @@
+.historyBlock {
+  padding: 60px 20px;
+  display: flex;
+  height: 640px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 80px;
+  border: 2px solid black;
+  border-radius: 32px;
+  width: 320px;
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .titleIcon {
+      height: 24px;
+    }
+    .titleText {
+      font-size: 32px;
+    }
+  }
+
+
+  .history {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .move {
+      font-size: 32px;
+      @media screen and (max-width: 1024px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 320px;
+  }
+}

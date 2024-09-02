@@ -1,0 +1,14 @@
+{
+  "trailingComma": "es5",
+  "tabWidth": 4,
+  "printWidth": 100,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "embeddedLanguageFormatting": "auto",
+  "singleAttributePerLine": true,
+  "bracketSameLine": false
+}
