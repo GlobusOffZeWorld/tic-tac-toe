@@ -15,9 +15,9 @@ interface GridProps {
 }
 
 const WinnerTitle = {
-  [TicTacToeEnum.X]: 'X won',
-  [TicTacToeEnum.O]: 'O won',
-  [TicTacToeEnum.EMPTY]: 'Tie',
+  [TicTacToeEnum.X]: 'X won!',
+  [TicTacToeEnum.O]: 'O won!',
+  [TicTacToeEnum.EMPTY]: 'Tie:(',
 };
 
 export const Grid: FC<GridProps> = ({ onChange, onRestart }) => {
