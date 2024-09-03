@@ -1,27 +1,26 @@
 .historyBlock {
   padding: 60px 20px;
   display: flex;
-  height: 640px;
+  height: 660px;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 80px;
-  border: 2px solid black;
-  border-radius: 32px;
+  gap: 20px;
+  border: var(--border-size-lg);
+  border-radius: var(--border-radius-size);
   width: 320px;
 
   .title {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     .titleIcon {
       height: 24px;
     }
     .titleText {
-      font-size: 32px;
+      font-size: 36px;
     }
   }
-
 
   .history {
     display: flex;
@@ -32,13 +31,14 @@
     justify-content: flex-start;
     .move {
       font-size: 32px;
-      @media screen and (max-width: 1024px) {
-        font-size: 16px;
+
+      @media screen and (width <= 1024px) {
+        font-size: 20px;
       }
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (width <= 1024px) {
     height: 320px;
   }
 }

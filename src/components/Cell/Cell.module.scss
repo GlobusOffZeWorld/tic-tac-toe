@@ -1,13 +1,20 @@
 .cell {
-  outline: 1px solid black;
+  outline: var(--border-size-lg);
   padding: 10px;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.2s;
+  border-radius: var(--border-radius-size);
+
+  &:not(.filled):hover {
+    background-color: rgba(#000, 33%);
+    transition: background-color 0.5s;
+  }
 
   img {
-    width: 90%;
+    width: 80%;
   }
 }
