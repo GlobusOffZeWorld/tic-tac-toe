@@ -2,6 +2,8 @@
 
 This project is a simple implementation of the game tic-tac-toe
 
+Demo: https://globusoffzeworld.github.io/tic-tac-toe/
+
 ## Code structure:
 
 A simple architecture was chosen with division into components, each of which is responsible for its own small part and is located in a separate folder along with a file for styles, inside components, everything is collected together in the App component, the utils folder is responsible for additional functionality not related to design
